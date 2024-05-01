@@ -1,3 +1,162 @@
+
+*, *::before, *::after{
+    font-family: Minecraft Regular;
+    text-transform: uppercase;
+}
+
+
+
+@font-face {
+    font-family:"Minecraft Regular";
+    src: url("Minecraft_Rus/minecraft.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+
+
+.title-div{
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+
+}
+
+
+
 .crossed{
     text-decoration: line-through;
+}
+
+.telegram {
+/* background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #64b5ef 75.52%, rgba(100, 181, 239, 0) 100%);
+background-repeat: no-repeat;
+  animation: bg-move linear 5s infinite;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  color: #FFF;
+  background: #5dc390;
+    background-color: rgb(93, 195, 144);
+    background-repeat: repeat;
+    background-image: none;
+  border-radius: 22px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 13px 24px;
+  height: 42px;
+  text-transform: uppercase;
+  vertical-align: top; */
+  
+}
+
+
+body{
+    width: 100vw;
+    height: 100%;
+}
+.page{
+    margin: 2vw;
+    margin-bottom: 0px;
+    display: block;
+}
+
+h1{
+    font-size: 90px;
+}
+h2{
+    font-size: 50px;
+}
+h3{
+    font-size: 35px;
+}
+
+
+.main-sec{
+    margin-top: 40px;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.text {
+    width: 58vw;
+}
+.inform p{
+    font-size: 40px;
+}
+
+.ava{
+    width: 36vw;
+    height: 36vw;
+} 
+.ava img {
+    width: 100%;
+    height: auto;
+}
+
+.links{
+    box-sizing: border-box;
+    margin: 20px  0px ;
+}
+
+.contact-link{
+    padding: 20px;
+    background-color: gray;
+    border: 2px solid black;
+    margin-right: 20px;
+}
+.telegram{
+    background-color: #1a8ad5;
+    border:3px dotted #ffffff ;
+    color: #fff;
+}
+
+.telegram-chanel{
+    background-color: #97d931;
+    border: 4px dashed #6aab33;
+}
+
+.github{
+    background-color: #0d1117;
+    border-color: #010409;
+    color: #e6edf3
+}
+
+
+.labyrinths-and-more{
+    text-align: center;
+}
+.labyrinths-and-more h2{
+    font-size: 40px;
+}
+
+.lam-div{
+    display: flex;
+    justify-content: space-between;
+}
+.lam-text p{
+    font-size: 35px;
+    text-align: left;
+}
+.lam-text{
+    width: 70%;
+}
+.lam-img{
+    width: 25%;
+    height: 25%;
+}
+
+.lam-img img{
+    width: 100%;
+    height: auto;
+}
+
+.links-y{
+    margin-top: 40px;
+    width: 100%;
 }
