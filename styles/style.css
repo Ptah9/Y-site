@@ -54,6 +54,10 @@ background-repeat: no-repeat;
   
 }
 
+p{
+    font-weight: bold;
+}
+
 
 body{
     width: 100vw;
@@ -130,6 +134,12 @@ h3{
 
 .labyrinths-and-more{
     text-align: center;
+    margin-top: 50px;
+    background-color: #eedfa6;
+    border: 7px solid #d1c491;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 .labyrinths-and-more h2{
     font-size: 40px;
