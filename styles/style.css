@@ -7,4 +7,31 @@
 }
  
 
+.title{
+	font-size: 100px;
+	text-align: center;
+}
 
+
+.who-is-it{
+	text-align: center;
+	width: 250px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.who-is-it p {
+	font-size: 40px;
+}
+
+
+.chat-area{
+	background-color: #C3A2F7;
+	width: 400px;
+	min-height: 10px;
+	height: auto;
+	position: absolute;
+  	top: 0;
+  	left: 50%;
+  	transform: translate(-50%, 0);
+}
