@@ -5,8 +5,8 @@ const resultFrame = document.getElementById('result');
 // Начальные значения
 let htmlCode = `<div class="card">
   <h1>Anton Ptah</h1>
+  <h2>Frontend-developer</h2>
   <h3>The site is still under development! This is a very early version — and not a pretty one yet. Sorry about that!</h3>
-  <p>Frontend-developer</p>
   <ul>
     <li>Email: <a href="mailto:anton@ptah.lol">anton@ptah.lol</a></li>
     <li>Telegram: <a href="https://t.me/ptah_9" target="_blank"
@@ -15,6 +15,7 @@ let htmlCode = `<div class="card">
 </div>`;
 let cssCode = `body { background: #f4f4f4; }
 .card {
+  font-family: consolas;
   background: #fff;
   max-width: 350px;
   margin: 60px auto;
