@@ -1,25 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ptah</title>
+    <title>Визитка Playground</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/reset.css">
+    <!-- <link rel="stylesheet" href="styles/reset.css">     -->
+    <link rel="stylesheet" href="styles/vs-code.css">
+    <link rel="stylesheet" href="styles/firefox.css">
 </head>
-<body id="body">
+<body>
+<div class="centered-windows">
+    <!-- VS Code window -->
+    <div class="vscode-window">
+        <div class="vscode-titlebar">
+            <div class="vscode-titlebar-left">
+                <span class="vscode-dot red"></span>
+                <span class="vscode-dot yellow"></span>
+                <span class="vscode-dot green"></span>
+            </div>
+            <div class="vscode-titlebar-center">
+                <!-- <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/visualstudiocode.svg" class="vscode-appicon" alt=""> -->
+                <span class="vscode-title">Y-site - Visual Studio Code</span>
+            </div>
+            <div class="vscode-titlebar-right">
+                <span class="vscode-btn"></span>
+                <span class="vscode-btn"></span>
+                <span class="vscode-btn"></span>
+            </div>
+        </div>
+        <div class="vscode-main">
+            <div class="vscode-sidebar-wrap">
+            <div class="vscode-sidebar">
+                <div class="vscode-sidebar-up">
+                    <span class="vscode-sidebar-icon">&#xEAF0;</span>
+                    <span class="vscode-sidebar-icon">&#xEA68;</span>
+                    <span class="vscode-sidebar-icon">&#xEB91;</span>
+                    <span class="vscode-sidebar-icon">&#xEAE6;</span>
+                    <span class="vscode-sidebar-icon">&#xEB39;</span>
+                    <span class="vscode-sidebar-icon">&#xEC39;</span>
+                </div>
+                <div class="vscode-sidebar-down">
+                    <span class="vscode-sidebar-icon">&#xEB99;</span>
+                    <span class="vscode-sidebar-icon">&#xEB51;</span>
+                </div>
+            </div>
+            </div>
+            <div class="vscode-content-wrap">
+            <div class="vscode-content">
+                <div class="vscode-tabs">
+                    <div class="html-tab vscode-tab active" data-tab="html">
+                        <span>index.html</span>
+                    </div>
+                    <div class="css-tab vscode-tab" data-tab="css">
+                        <span>style.css</span>
+                    </div>
+                    <div class="not-tabs">
+
+                    </div>
+                </div>
+                <textarea id="editor" spellcheck="false" class="vscode-textarea"></textarea>
+            </div>
+            </div>
+            <div class="vscode-statusbar-wrap">
+            <div class="vscode-statusbar">
+                    <div class="status-host"><span class="status-host-icon">&#xEB3A;</span></div>
+                    <div class="vscode-statusbar-main">
+                        <div class="vscode-statusbar-left">
+                            <div class="status-branch vscode-statusbar-item">
+                                <div class="branch-name-wrap">
+                                <span class="vscode-statusbar-icon" id="branch-name">main*</span>
+                                </div>
+                                <div class="status-branch-reload-wrap">
+                                <span class="vscode-statusbar-icon" id="status-branch-reload">&#xEA77;</span>
+                                </div>
+                            </div>
+                            <div class="status-problems vscode-statusbar-item">
+                                <span class="vscode-statusbar-icon" id="status-error">0</span>
+                                <span class="vscode-statusbar-icon" id="status-warning">0</span>
+                            </div>
+                        </div>
+                        <!-- <div class="vscode-statusbar-right">
+                            <div class="status-selection">
+                                <span>Ln 9, Col 3</span>
+                            </div>
+                            <div class="status-indentation">
+                                <span>Ln 9, Col 3</span>
+                            </div>
+                            <div class="status-encoding">
+                                <span>UTF-8</span>
+                            </div>
+                            <div class="status-language">
+                                <span>&#xEB0F;</span>
+                                <span>HTML</span>
+                            </div>
+                            <div class="status-layout">
+                                <span>Layout: US</span>
+                            </div>
+                            <div class="status-notifications">
+                                <span>&#xEAA2;</span>
+                            </div>
+                        </div> -->
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Firefox window -->
+    <div class="firefox-window">
+        <div class="firefox-titlebar">
+            <div class="firefox-tabs">
+                <div class="firefox-tab active">
+                    <!-- <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/firefoxbrowser.svg" class="firefox-tabicon" alt=""> -->
+                    <span>New Tab</span>
+                    <span class="firefox-close">&#10005;</span>
+                </div>
+            </div>
+            <div class="firefox-controls">
+                <span class="firefox-dot red"></span>
+                <span class="firefox-dot yellow"></span>
+                <span class="firefox-dot green"></span>
+            </div>
+        </div>
+        <div class="firefox-addressbar">
+            <span class="firefox-lock">&#128274;</span>
+            <input type="text" value="http://127.0.0.1:5500" readonly>
+            <span class="firefox-refresh">&#10227;</span>
+        </div>
+        <iframe id="result"></iframe>
+    </div>
+</div>
+<script src="scripts/main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

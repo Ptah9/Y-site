@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Fira Mono', monospace, sans-serif;
+    background: #23272e;
+    color: #fff;
+    min-height: 100vh;
+}
+
+
+@font-face {
+  font-family: 'codicon';
+  src: url('fonts/codicon.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'seti';
+    src: url('fonts/seti.woff') format('woff');
+}
+
+.centered-windows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 48px;
+}

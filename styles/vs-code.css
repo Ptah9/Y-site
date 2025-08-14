@@ -1,0 +1,390 @@
+.vscode-window {
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    min-width: 540px;
+    max-width: 700px;
+    min-height: 540px;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.vscode-titlebar {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    background: #181818;
+    height: 32px;
+    padding: 0 10px;
+    border-bottom: 1px solid #2b2b2b;
+}
+.vscode-titlebar-left {
+    display: flex;
+    gap: 6px;
+}
+.vscode-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.vscode-dot.red { background: #ff5f56; }
+.vscode-dot.yellow { background: #ffbd2e; }
+.vscode-dot.green { background: #27c93f; }
+.vscode-titlebar-center {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    gap: 8px;
+}
+.vscode-appicon {
+    width: 18px;
+    height: 18px;
+}
+.vscode-title {
+    color: #d4d4d4;
+    font-size: 1em;
+    font-weight: 500;
+}
+.vscode-titlebar-right {
+    display: flex;
+    gap: 8px;
+}
+.vscode-btn {
+    width: 14px;
+    height: 14px;
+    background: #393953;
+    border-radius: 3px;
+    display: inline-block;
+}
+.vscode-main {
+    position: relative;
+    display: grid;
+    flex: 1;
+    grid-template-columns: 47px 1fr;
+    grid-template-rows: 1fr 21px;
+}
+
+.grid > div {
+  align-self: stretch;   /* растягивает по вертикали */
+  justify-self: stretch; /* растягивает по горизонтали */
+}
+
+
+.vscode-sidebar-wrap {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.vscode-content-wrap {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.vscode-statusbar-wrap {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+.vscode-sidebar {
+    user-select: none;
+    height: 100%;
+    width: 100%;
+    background: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.vscode-sidebar-up, .vscode-sidebar-down {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vscode-sidebar-up{
+    padding-top: 12px;
+}
+
+.vscode-sidebar-down {
+    padding-bottom: 12px;
+
+}
+
+
+.vscode-sidebar-icon {
+    font-family: codicon;
+    color: rgb(134, 134, 134);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+.vscode-sidebar-icon:hover {
+    color: #cccccc;
+}
+.vscode-content {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 36px 1fr;
+}
+.vscode-tabs {
+    user-select: none;
+    box-sizing: border-box;
+    display: flex;
+    background: #181818;
+    border-left: 1px solid #2b2b2b;
+    border-top: none;
+    height: 36px;
+    align-items: center;
+}
+
+.css-tab:before {
+    font-family: 'seti';
+    content: "\E01D";
+    font-size: 20px;
+    color: #519aba;
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
+}
+
+.html-tab:before {
+    font-family: 'seti';
+    content: "\E048";
+    font-size: 20px;
+    color: #e37933;
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
+}
+
+
+.vscode-tab {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    padding: 0 10px;
+    height: 100%;
+    color: #bbb;
+    cursor: pointer;
+    font-size: 15px;
+    background: #181818;
+    border-right: 1px solid #2b2b2b;
+    border-bottom: 1px solid #2b2b2b;
+    padding-top:1px;
+
+}
+
+
+.vscode-tab.active {
+    padding-top:0;
+    border-top: 1px solid #0078d4;
+    border-bottom-color: #1f1f1f;
+    box-shadow: none;
+    background: #1f1f1f;
+    color: #fff;
+}
+.vscode-fileicon {
+    width: 16px;
+    height: 16px;
+}
+
+
+.not-tabs {
+    box-sizing: border-box;
+    flex-grow: 1;
+    height: 100%;
+    border-bottom: 1px solid #2b2b2b;   
+}
+
+
+.vscode-textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-left: 1px solid #2b2b2b;
+}
+
+.vscode-textarea {
+    margin-top: 0px;    
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    color: #fff;
+    border: none;
+    border-left: 1px solid #2b2b2b;
+    resize: none;
+    font-family: 'Fira Mono', monospace;
+    font-size: 1em;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.vscode-statusbar {
+    user-select: none;
+    width: 100%;
+    border-top: solid 0.5px #2b2b2b;
+    /* position: absolute; */
+    bottom: 0px;
+    display: grid;
+    grid-template-columns: 33px 1fr;
+
+}
+
+
+.status-host {
+    width: 100%;
+    height: 21px;
+    background-color: #0078d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.status-host:hover {
+    background-color: #1f88d9;
+}
+
+.status-host-icon{
+    font-size: 13px;
+    font-family: 'codicon';
+    color: #ffffff;
+}
+
+
+.vscode-statusbar-main {
+    width: 100%;
+    height: 21px;
+}
+
+.vscode-statusbar-left {
+    height: 100%;
+    display: flex;
+}
+.vscode-statusbar-right{
+    height: 100%;
+    display: flex;
+}
+
+
+
+.vscode-statusbar-main{
+    color: rgb(201, 204, 204);
+    background-color: #181818;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vscode-statusbar-item {
+    padding: 0 5px;
+    margin: 0 3px;
+}
+
+.vscode-statusbar-item:hover {
+    background-color: #343434;
+}
+/* 464646 */
+
+
+
+.vscode-statusbar-icon{
+    /* font-family: consolas; */
+    font-size: 12px;
+    position: relative;
+    bottom: 1px;
+}
+
+.status-problems {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#status-error::before {
+    font-family: codicon;
+    content: '\ea87';
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+
+#status-warning::before {
+    font-family: codicon;
+    content: '\ea6c';
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+
+}
+
+
+
+.status-branch {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-left: 6px
+}
+
+.branch-name-wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 2px;
+
+
+}
+
+.status-branch-reload-wrap {
+    height: 100%;
+    padding-left: 5px;
+    padding-right: 3px;
+
+}
+
+
+.branch-name-wrap:hover, .status-branch-reload-wrap:hover {
+    background-color: #464646;
+}
+
+
+
+.status-branch-reload-wrap{
+    display: flex;
+    align-items: center;
+}
+
+#branch-name::before {
+    font-family: codicon;
+    content: '\ea68';
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+}
+#branch-name {
+    position: relative;
+    bottom: 1px;
+}
+
+#status-branch-reload {
+    font-family: codicon;
+    font-size: 14px;
+    position: relative;
+    top: 0px;
+}
+
