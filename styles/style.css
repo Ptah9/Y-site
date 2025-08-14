@@ -20,8 +20,15 @@ body {
 
 .centered-windows {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
     gap: 48px;
+}
+
+@media (max-width: 1150px) {
+  .centered-windows {
+    flex-direction: column;
+  }
 }

@@ -28,9 +28,7 @@ let cssCode = `body { background: #f4f4f4; }
 .card ul { list-style: none; padding: 0; }
 .card li { margin: 12px 0; font-size: 1.1em; }
 .card a { color: #0077cc; text-decoration: none; }
-h3 {
-color: red
-}
+.card h3 { color: red; }
 `;
 
 let currentTab = 'html';
